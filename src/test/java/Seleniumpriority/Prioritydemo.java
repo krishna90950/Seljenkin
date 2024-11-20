@@ -21,20 +21,8 @@ public class Prioritydemo {
 		
 	}
 	
-	@Test(priority = 2)
-	public void searchleave() throws InterruptedException {
-		Thread.sleep(800);
-		driver.findElement(By.xpath("//a/span[text() ='Leave']")).click();
-		Thread.sleep(800);
-		driver.findElement(By.xpath("input[@placeholder='Type for hints...']")).sendKeys("john");
-		
-		//driver.findElement(By.cssSelector(".oxd-main-menu-item.active")).click();
-		//driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/input[1]")).sendKeys("Virat");
-		
-	}
-	
 	//@Ignore
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void logout() throws InterruptedException {
 		Thread.sleep(800);
 		driver.findElement(By.xpath("//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']")).click();
@@ -43,7 +31,7 @@ public class Prioritydemo {
 	}
 	
 	
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public void mlosea() {
 		driver.close();
 	}
